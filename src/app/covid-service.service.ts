@@ -14,7 +14,7 @@ export class CovidServiceService {
 
   getSummary() {
 
-     return this.http.get(this.summaryApi);
+     return this.http.get<{}>(this.summaryApi);
 
   }
 
