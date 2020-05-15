@@ -1,5 +1,25 @@
 
+<div class="card-deck">
 
-<h1>Total Confirmed: {{totalConfirmed}} </h1>
-<h1>Total Deaths:  {{totalDeaths}}</h1>
-<h1>Total Recovered: {{totalRecovered}} </h1>
+<div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+    <div class="card-header"><h3>Total Confirmed</h3></div>
+    <div class="card-body">
+      <h4 class="card-title">{{totalConfirmed}} </h4>
+      <p class="card-text">Number of coronavirus cases since the outbreak.</p>
+    </div>
+  </div>
+<div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+    <div class="card-header"><h3>Total Deaths</h3></div>
+    <div class="card-body">
+      <h4 class="card-title">{{totalDeaths}}</h4>
+      <p class="card-text">Number of coronavirus related deaths since the outbreak.</p>
+    </div>
+  </div>
+<div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+  <div class="card-header"><h3>Total Recovered</h3></div>
+  <div class="card-body">
+    <h4 class="card-title">{{totalRecovered}}</h4>
+    <p class="card-text">Number of cases recovered since the outbreak.</p>
+  </div>
+</div>
+</div>
