@@ -9,3 +9,12 @@
     margin-top: -3%;
    
 }
+.titleClass{
+    float: left;
+}
+.globeImg {
+    height: 40px;
+    width: 40px;
+    float: right;
+    padding: 5px;
+}
