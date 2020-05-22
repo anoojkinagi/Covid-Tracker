@@ -1,0 +1,37 @@
+header{
+    background-color: rgba(1, 1, 8, 0.904);
+    height: 200px;
+    text-align: center;
+   
+}
+
+
+.headerText h1 {
+    color: white;
+    font-size: 700%;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    display: inline-block;
+    
+
+}
+
+.summaryTable{
+    width: 75%;
+    margin: 3% auto;
+    text-align: center;
+   
+
+}
+
+.table th{
+    border-bottom: 2px solid rgba(24, 6, 65, 0.89);
+    border-top: 2px solid rgba(24, 6, 65, 0.89);
+}
+
+
+.summaryTable h3{
+    display: inline-block;
+    font-style: initial;
+    font-weight: bolder;
+    
+}

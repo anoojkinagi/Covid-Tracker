@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CovidServiceService } from '../covid-service.service';
 import { Observable, throwError } from 'rxjs';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-global',
@@ -9,7 +10,7 @@ import { Observable, throwError } from 'rxjs';
 })
 export class GlobalComponent implements OnInit {
 
-  constructor(private covidService: CovidServiceService) { }
+  constructor(private covidService: CovidServiceService, public router: Router) { }
 
   summary:{}
   
@@ -17,10 +18,14 @@ export class GlobalComponent implements OnInit {
   totalConfirmed: any;
   totalDeaths:  any;
   totalRecovered:  any;
-
+  
+  totalConfirmedUS: any;
+  totalDeathsUS: any;
+  totalRecoveredUS:  any;
 
   ngOnInit() {
     this.getSummaryData();
+    this.getUSData();
   }
 
 
@@ -37,6 +42,20 @@ export class GlobalComponent implements OnInit {
        
       })
     
+  }
+
+  getUSData() {
+
+    this.covidService.getUSTotal().subscribe((data)=>{
+
+      this.totalConfirmedUS =data[data.length-1]['Confirmed'];
+      this.totalDeathsUS =data[data.length-1]['Deaths'];
+      this.totalRecoveredUS =data[data.length-1]['Recovered'];
+      
+      
+      
+    })
+
   }
 
 }

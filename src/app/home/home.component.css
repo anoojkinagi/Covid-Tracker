@@ -1,0 +1,17 @@
+
+header{
+    background-color: rgba(1, 1, 8, 0.904);
+    height: 200px;
+    text-align: center;
+   
+}
+
+
+.headerText h1 {
+    color: white;
+    font-size: 700%;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    display: inline-block;
+    
+
+}

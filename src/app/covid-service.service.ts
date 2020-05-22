@@ -12,6 +12,8 @@ export class CovidServiceService {
 
    summaryApi = "https://api.covid19api.com/summary";
    newsApi= "https://covidtracking.com/api/press";
+   usStatesCovidApi = "https://covidtracking.com/api/states";
+   usTotalApi= "https://api.covid19api.com/total/country/us";
 
   getSummary() {
 
@@ -22,6 +24,19 @@ export class CovidServiceService {
   getNews() {
 
     return this.http.get<[]>(this.newsApi);
+
+  }
+
+  getUsStatesCovid() {
+
+    return this.http.get<[]>(this.usStatesCovidApi);
+
+  }
+
+
+  getUSTotal() {
+
+    return this.http.get<[]>(this.usTotalApi);
 
   }
 

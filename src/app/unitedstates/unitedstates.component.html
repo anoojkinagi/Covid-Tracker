@@ -1,0 +1,41 @@
+<div class="wrapper">
+  <header>
+    <div class="headerText">
+      <h1> Covid Tracker</h1>
+    </div>
+
+  </header>
+
+
+  <app-global></app-global>
+
+
+
+</div>
+
+<div class="summaryTable">
+  <h3>Cases in US</h3>
+  <table class="table table-hover table-sm responsive  " id="dtBasicExample">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">State</th>
+        <th scope="col">Total Confirmed</th>
+        <th scope="col">Total Deaths</th>
+        <th scope="col">Total Recovered</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let state of usStateCovidArray; index as i">
+        <td scope="row">{{i+1}}</td>
+        <td>{{state.stateName}} ( {{state.state}} )</td>
+        <td>{{state.positive  | number}}</td>
+        <td>{{state.death | number}}</td>
+        <td>{{state.recovered | number}}</td>
+
+      </tr>
+
+    </tbody>
+  </table>
+</div>

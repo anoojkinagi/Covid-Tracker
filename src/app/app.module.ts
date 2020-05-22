@@ -8,13 +8,17 @@ import { GlobalComponent } from './global/global.component';
 import {HttpClientModule} from '@angular/common/http';
 import { SummaryComponent } from './summary/summary.component';
 import { NewsComponent } from './news/news.component';
+import { UnitedstatesComponent } from './unitedstates/unitedstates.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GlobalComponent,
     SummaryComponent,
-    NewsComponent
+    NewsComponent,
+    UnitedstatesComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
