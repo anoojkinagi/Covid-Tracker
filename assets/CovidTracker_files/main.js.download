@@ -1,0 +1,1082 @@
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["main"],{
+
+/***/ "./$$_lazy_route_resource lazy recursive":
+/*!******************************************************!*\
+  !*** ./$$_lazy_route_resource lazy namespace object ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/app.component.html":
+/*!**************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/app.component.html ***!
+  \**************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<!-- <div class=\"wrapper\">\n    <header>\n        <div class=\"headerText\">\n           <h1> Covid Tracker</h1>\n        </div>\n        \n    </header>\n\n\n    <app-global></app-global>\n\n\n    \n</div>\n<app-news></app-news>\n<app-summary></app-summary> -->\n<nav class=\"navbar navbar-expand-lg navbar-dark\">\n    \n    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNavDropdown\" aria-controls=\"navbarNavDropdown\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n      <span class=\"navbar-toggler-icon\"></span>\n    </button>\n    <div class=\"collapse navbar-collapse\" id=\"navbarNavDropdown\">\n      <ul class=\"navbar-nav\">\n        <li class=\"nav-item\">\n          <a class=\"nav-link\" href=\"\">Home<span class=\"sr-only\">(current)</span></a>\n        </li>\n        <li class=\"nav-item\">\n          <a class=\"nav-link\" href=\"#summaryTable\">Cases Worldwide</a>\n        </li>\n        <li class=\"nav-item\">\n            <a routerLink=\"/united-states\" class=\"nav-link\" >Covid in USA</a>\n          \n        </li>\n      </ul>\n    </div>\n  </nav>\n<router-outlet></router-outlet>\n\n<footer>\n    <div class=\"footDiv\">\n        \n    </div>\n</footer>\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/global/global.component.html":
+/*!************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/global/global.component.html ***!
+  \************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n\n\n\n<div class=\"card-deck\">\n\n<div class=\"card text-white bg-danger mb-3\" style=\"max-width: 18rem;\">\n    <div class=\"card-header\"><h3 class=\"titleClass\">Total Confirmed</h3><img *ngIf=\"router.url === '/united-states' ; else elseImg\" src=\"./assets/usflag.png\" class=\"globeImg\"> <ng-template #elseImg> <img src=\"./assets/globe.png\" class=\"globeImg\"> </ng-template> </div>\n    <div class=\"card-body\">\n      \n      <h4 *ngIf=\"router.url === '/united-states' ; else elseTemplate\" class=\"card-title\">{{totalConfirmedUS | number}} </h4>\n      <ng-template #elseTemplate>\n        <h4  class=\"card-title\">{{totalConfirmed}} </h4>\n      \n      </ng-template>\n      \n      <p class=\"card-text\">Number of coronavirus cases since the outbreak.</p>\n    </div>\n  </div>\n<div class=\"card text-white bg-dark mb-3\" style=\"max-width: 18rem;\">\n    <div class=\"card-header\"><h3 class=\"titleClass\">Total Deaths</h3><img *ngIf=\"router.url === '/united-states' ; else elseImg\" src=\"./assets/usflag.png\" class=\"globeImg\"> </div>\n    <div class=\"card-body\">\n      \n      <h4 *ngIf=\"router.url === '/united-states' ; else elseTemplate2\" class=\"card-title\">{{totalDeathsUS | number}} </h4>\n      <ng-template #elseTemplate2>\n        <h4  class=\"card-title\">{{totalDeaths}} </h4>\n      \n      </ng-template>\n      <p class=\"card-text\">Number of coronavirus related deaths since the outbreak.</p>\n    </div>\n  </div>\n<div class=\"card text-white bg-success mb-3\" style=\"max-width: 18rem;\">\n  <div class=\"card-header\"><h3 class=\"titleClass\">Total Recovered</h3><img *ngIf=\"router.url === '/united-states' ; else elseImg\" src=\"./assets/usflag.png\" class=\"globeImg\"> </div>\n  <div class=\"card-body\">\n   \n    <h4 *ngIf=\"router.url === '/united-states' ; else elseTemplate3\" class=\"card-title\">{{totalRecoveredUS | number}} </h4>\n    <ng-template #elseTemplate3>\n      <h4  class=\"card-title\">{{totalRecovered}} </h4>\n    \n    </ng-template>\n    <p class=\"card-text\">Number of cases recovered since the outbreak.</p>\n  </div>\n</div>\n</div>");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/home/home.component.html":
+/*!********************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/home/home.component.html ***!
+  \********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n\n\n\n\n<div class=\"wrapper\">\n    <header>\n        <div class=\"headerText\">\n           <h1 class=\"display-2\"> Covid Tracker</h1>\n        </div>\n        \n    </header>\n    \n\n\n    <app-global></app-global>\n\n\n    \n</div>\n<app-symptoms>  </app-symptoms>\n<app-news></app-news>\n<app-summary></app-summary>");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/news/news.component.html":
+/*!********************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/news/news.component.html ***!
+  \********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n<div class=\"newsCard\">\n    <div class=\"card-header\">\n        <h3>Related News</h3>\n      </div>\n<div *ngFor=\"let item of newsArray; index as i\"  class=\"card\">\n    <div class=\"card-header\">\n      {{item.publication}}\n    </div>\n    <div class=\"card-body\">\n      <blockquote class=\"blockquote mb-0\">\n        <h5>\"{{item.title}}\"</h5>\n        <a href=\"{{item.url}}\" target=\"_blank\">{{item.url}}</a>\n        <footer class=\"blockquote-footer\"><cite title=\"Source Title\">{{item.author}}</cite></footer>\n      </blockquote>\n      <p class=\"card-text\"><small class=\"text-muted\">{{item.publishDate | date}}</small></p>\n    </div>\n  </div>\n</div>\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/summary/summary.component.html":
+/*!**************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/summary/summary.component.html ***!
+  \**************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n\n<div class=\"summaryTable\" id=\"summaryTable\">\n<h3>Cases Worldwide</h3>\n<table class=\"table table-hover table-sm responsive  \" id=\"dtBasicExample\" >\n    <thead>\n      <tr>\n        <th scope=\"col\">#</th>\n        <th scope=\"col\">Country</th>\n        <th scope=\"col\">Total Confirmed</th>\n        <th scope=\"col\">New Confirmed</th>\n        <th scope=\"col\">Total Deaths</th>\n        <th scope=\"col\">New Deaths</th>\n        <th scope=\"col\">Total Recovered</th>\n        <th scope=\"col\">New Recovered</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr *ngFor=\"let country of countrySummary; index as i\">\n        <td scope=\"row\">{{i+1}}</td>\n        <td>{{country.Country}}</td>\n        <td>{{country.TotalConfirmed  | number}}</td>\n        <td>{{country.NewConfirmed | number}}</td>\n        <td>{{country.TotalDeaths | number}}</td>\n        <td>{{country.NewDeaths | number}}</td>\n        <td>{{country.TotalRecovered | number}}</td>\n        <td>{{country.NewRecovered | number}}</td>\n      </tr>\n      \n    </tbody>\n  </table>\n</div>");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/symptoms/symptoms.component.html":
+/*!****************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/symptoms/symptoms.component.html ***!
+  \****************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"symptom\">\n<div class=\"row\">\n    <div class=\"col-sm-6\">\n      <div class=\"card\">\n        <div class=\"card-body\">\n\n\n          <img src=\"./assets/preventionImg.gif\" alt=\"prevention gif\">\n          <h3 class=\"card-title\">STAY HOME. SAVE LIVES.</h3>\n          <ul class=\"list-group list-group-flush\">\n            <li class=\"list-group-item\">1. <b>STAY</b> home as much as you can</li>\n            <li class=\"list-group-item\">2. <b>KEEP</b> a safe distance</li>\n            <li class=\"list-group-item\">3. <b>WASH</b> hands often</li>\n            <li class=\"list-group-item\">4. <b>COVER</b> your cough</li>\n            <li class=\"list-group-item\">5. <b>SICK?</b> Call ahead</li>\n          </ul>\n          <a href=\"https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public\" class=\"btn btn-primary MoreInfo\" target=\"_blank\">More Info</a>\n        </div>\n      </div>\n    </div>\n    <div class=\"col-sm-6\">\n      <div class=\"card\">\n        <div class=\"card-body\">\n\n            <div class=\"imgClass\">\n                <img src=\"./assets/light_fever.gif\" alt=\"fever gif\" class=\"feverGif\"> \n              <img src=\"./assets/light_cough.gif\" alt=\"cough gif\" class=\"coughGif\">\n             \n             </div>\n       \n          <h5 class=\"card-title\">Special title treatment</h5>\n          <p class=\"card-text\">COVID-19 affects different people in different ways. Infected people have had a wide range of symptoms reported – from mild symptoms to severe illness.</p>\n\n          <p class=\"card-text\">Symptoms may appear 2-14 days after exposure to the virus. People with these symptoms may have COVID-19:</p>\n          <ul class=\"\">\n            <li class=\"symptomLi\">Cough</li>\n            <li class=\"symptomLi\">Shortness of breath or difficulty breathing</li>\n            <li class=\"symptomLi\">Fever</li>\n            <li class=\"symptomLi\">Chills</li>\n            <li class=\"symptomLi\">Muscle pain</li>\n            <li class=\"symptomLi\">Sore Throat</li>\n            <li class=\"symptomLi\">New loss of taste or smell</li>   \n          </ul>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/unitedstates/unitedstates.component.html":
+/*!************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/unitedstates/unitedstates.component.html ***!
+  \************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"wrapper\">\n  <header>\n    <div class=\"headerText\">\n      <h1> Covid Tracker</h1>\n    </div>\n\n  </header>\n\n\n  <app-global></app-global>\n\n\n\n</div>\n\n<div class=\"summaryTable\">\n  <h3>Cases in US</h3>\n  <table class=\"table table-hover table-sm responsive  \" id=\"dtBasicExample\">\n    <thead>\n      <tr>\n        <th scope=\"col\">#</th>\n        <th scope=\"col\">State</th>\n        <th scope=\"col\">Total Confirmed</th>\n        <th scope=\"col\">Total Deaths</th>\n        <th scope=\"col\">Total Recovered</th>\n\n      </tr>\n    </thead>\n    <tbody>\n      <tr *ngFor=\"let state of usStateCovidArray; index as i\">\n        <td scope=\"row\">{{i+1}}</td>\n        <td>{{state.stateName}} ( {{state.state}} )</td>\n        <td>{{state.positive  | number}}</td>\n        <td>{{state.death | number}}</td>\n        <td>{{state.recovered | number}}</td>\n\n      </tr>\n\n    </tbody>\n  </table>\n</div>");
+
+/***/ }),
+
+/***/ "./node_modules/tslib/tslib.es6.js":
+/*!*****************************************!*\
+  !*** ./node_modules/tslib/tslib.es6.js ***!
+  \*****************************************/
+/*! exports provided: __extends, __assign, __rest, __decorate, __param, __metadata, __awaiter, __generator, __createBinding, __exportStar, __values, __read, __spread, __spreadArrays, __await, __asyncGenerator, __asyncDelegator, __asyncValues, __makeTemplateObject, __importStar, __importDefault, __classPrivateFieldGet, __classPrivateFieldSet */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__extends", function() { return __extends; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__assign", function() { return __assign; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__rest", function() { return __rest; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__decorate", function() { return __decorate; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__param", function() { return __param; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__metadata", function() { return __metadata; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__awaiter", function() { return __awaiter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__generator", function() { return __generator; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__createBinding", function() { return __createBinding; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__exportStar", function() { return __exportStar; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__values", function() { return __values; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__read", function() { return __read; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__spread", function() { return __spread; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__spreadArrays", function() { return __spreadArrays; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__await", function() { return __await; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__asyncGenerator", function() { return __asyncGenerator; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__asyncDelegator", function() { return __asyncDelegator; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__asyncValues", function() { return __asyncValues; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__makeTemplateObject", function() { return __makeTemplateObject; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__importStar", function() { return __importStar; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__importDefault", function() { return __importDefault; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__classPrivateFieldGet", function() { return __classPrivateFieldGet; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__classPrivateFieldSet", function() { return __classPrivateFieldSet; });
+/*! *****************************************************************************
+Copyright (c) Microsoft Corporation.
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+***************************************************************************** */
+/* global Reflect, Promise */
+
+var extendStatics = function(d, b) {
+    extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return extendStatics(d, b);
+};
+
+function __extends(d, b) {
+    extendStatics(d, b);
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+}
+
+var __assign = function() {
+    __assign = Object.assign || function __assign(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
+        }
+        return t;
+    }
+    return __assign.apply(this, arguments);
+}
+
+function __rest(s, e) {
+    var t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                t[p[i]] = s[p[i]];
+        }
+    return t;
+}
+
+function __decorate(decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+}
+
+function __param(paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+}
+
+function __metadata(metadataKey, metadataValue) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(metadataKey, metadataValue);
+}
+
+function __awaiter(thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+}
+
+function __generator(thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+}
+
+const __createBinding = Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+});
+
+function __exportStar(m, exports) {
+    for (var p in m) if (p !== "default" && !exports.hasOwnProperty(p)) __createBinding(exports, m, p);
+}
+
+function __values(o) {
+    var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
+    if (m) return m.call(o);
+    if (o && typeof o.length === "number") return {
+        next: function () {
+            if (o && i >= o.length) o = void 0;
+            return { value: o && o[i++], done: !o };
+        }
+    };
+    throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
+}
+
+function __read(o, n) {
+    var m = typeof Symbol === "function" && o[Symbol.iterator];
+    if (!m) return o;
+    var i = m.call(o), r, ar = [], e;
+    try {
+        while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
+    }
+    catch (error) { e = { error: error }; }
+    finally {
+        try {
+            if (r && !r.done && (m = i["return"])) m.call(i);
+        }
+        finally { if (e) throw e.error; }
+    }
+    return ar;
+}
+
+function __spread() {
+    for (var ar = [], i = 0; i < arguments.length; i++)
+        ar = ar.concat(__read(arguments[i]));
+    return ar;
+}
+
+function __spreadArrays() {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+};
+
+function __await(v) {
+    return this instanceof __await ? (this.v = v, this) : new __await(v);
+}
+
+function __asyncGenerator(thisArg, _arguments, generator) {
+    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+    var g = generator.apply(thisArg, _arguments || []), i, q = [];
+    return i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i;
+    function verb(n) { if (g[n]) i[n] = function (v) { return new Promise(function (a, b) { q.push([n, v, a, b]) > 1 || resume(n, v); }); }; }
+    function resume(n, v) { try { step(g[n](v)); } catch (e) { settle(q[0][3], e); } }
+    function step(r) { r.value instanceof __await ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r); }
+    function fulfill(value) { resume("next", value); }
+    function reject(value) { resume("throw", value); }
+    function settle(f, v) { if (f(v), q.shift(), q.length) resume(q[0][0], q[0][1]); }
+}
+
+function __asyncDelegator(o) {
+    var i, p;
+    return i = {}, verb("next"), verb("throw", function (e) { throw e; }), verb("return"), i[Symbol.iterator] = function () { return this; }, i;
+    function verb(n, f) { i[n] = o[n] ? function (v) { return (p = !p) ? { value: __await(o[n](v)), done: n === "return" } : f ? f(v) : v; } : f; }
+}
+
+function __asyncValues(o) {
+    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+    var m = o[Symbol.asyncIterator], i;
+    return m ? m.call(o) : (o = typeof __values === "function" ? __values(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i);
+    function verb(n) { i[n] = o[n] && function (v) { return new Promise(function (resolve, reject) { v = o[n](v), settle(resolve, reject, v.done, v.value); }); }; }
+    function settle(resolve, reject, d, v) { Promise.resolve(v).then(function(v) { resolve({ value: v, done: d }); }, reject); }
+}
+
+function __makeTemplateObject(cooked, raw) {
+    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+    return cooked;
+};
+
+const __setModuleDefault = Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+};
+
+function __importStar(mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+}
+
+function __importDefault(mod) {
+    return (mod && mod.__esModule) ? mod : { default: mod };
+}
+
+function __classPrivateFieldGet(receiver, privateMap) {
+    if (!privateMap.has(receiver)) {
+        throw new TypeError("attempted to get private field on non-instance");
+    }
+    return privateMap.get(receiver);
+}
+
+function __classPrivateFieldSet(receiver, privateMap, value) {
+    if (!privateMap.has(receiver)) {
+        throw new TypeError("attempted to set private field on non-instance");
+    }
+    privateMap.set(receiver, value);
+    return value;
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/webpack/hot sync ^\\.\\/log$":
+/*!*************************************************!*\
+  !*** (webpack)/hot sync nonrecursive ^\.\/log$ ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./log": "./node_modules/webpack/hot/log.js"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./node_modules/webpack/hot sync ^\\.\\/log$";
+
+/***/ }),
+
+/***/ "./src/app/app-routing.module.ts":
+/*!***************************************!*\
+  !*** ./src/app/app-routing.module.ts ***!
+  \***************************************/
+/*! exports provided: AppRoutingModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppRoutingModule", function() { return AppRoutingModule; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _unitedstates_unitedstates_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./unitedstates/unitedstates.component */ "./src/app/unitedstates/unitedstates.component.ts");
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
+
+
+
+
+
+const routes = [
+    { path: 'united-states', component: _unitedstates_unitedstates_component__WEBPACK_IMPORTED_MODULE_3__["UnitedstatesComponent"] },
+    { path: '', component: _home_home_component__WEBPACK_IMPORTED_MODULE_4__["HomeComponent"] },
+];
+let AppRoutingModule = class AppRoutingModule {
+};
+AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+        imports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(routes)],
+        exports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]]
+    })
+], AppRoutingModule);
+
+
+
+/***/ }),
+
+/***/ "./src/app/app.component.css":
+/*!***********************************!*\
+  !*** ./src/app/app.component.css ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (".footDiv{\r\n    height:  200px;\r\n    background-color: black;\r\n}\r\n\r\n.navbar {\r\n    background-color: rgba(1, 1, 8, 0.904);\r\n   \r\n}\r\n\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxjQUFjO0lBQ2QsdUJBQXVCO0FBQzNCOztBQUVBO0lBQ0ksc0NBQXNDOztBQUUxQyIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmZvb3REaXZ7XHJcbiAgICBoZWlnaHQ6ICAyMDBweDtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xyXG59XHJcblxyXG4ubmF2YmFyIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMSwgMSwgOCwgMC45MDQpO1xyXG4gICBcclxufVxyXG5cclxuIl19 */");
+
+/***/ }),
+
+/***/ "./src/app/app.component.ts":
+/*!**********************************!*\
+  !*** ./src/app/app.component.ts ***!
+  \**********************************/
+/*! exports provided: AppComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponent", function() { return AppComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let AppComponent = class AppComponent {
+    constructor() {
+        this.title = 'Covid-Tracker';
+    }
+};
+AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-root',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./app.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/app.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./app.component.css */ "./src/app/app.component.css")).default]
+    })
+], AppComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/app.module.ts":
+/*!*******************************!*\
+  !*** ./src/app/app.module.ts ***!
+  \*******************************/
+/*! exports provided: AppModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppModule", function() { return AppModule; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm2015/platform-browser.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _global_global_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./global/global.component */ "./src/app/global/global.component.ts");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+/* harmony import */ var _summary_summary_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./summary/summary.component */ "./src/app/summary/summary.component.ts");
+/* harmony import */ var _news_news_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./news/news.component */ "./src/app/news/news.component.ts");
+/* harmony import */ var _unitedstates_unitedstates_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./unitedstates/unitedstates.component */ "./src/app/unitedstates/unitedstates.component.ts");
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
+/* harmony import */ var _symptoms_symptoms_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./symptoms/symptoms.component */ "./src/app/symptoms/symptoms.component.ts");
+
+
+
+
+
+
+
+
+
+
+
+
+let AppModule = class AppModule {
+};
+AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
+        declarations: [
+            _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
+            _global_global_component__WEBPACK_IMPORTED_MODULE_5__["GlobalComponent"],
+            _summary_summary_component__WEBPACK_IMPORTED_MODULE_7__["SummaryComponent"],
+            _news_news_component__WEBPACK_IMPORTED_MODULE_8__["NewsComponent"],
+            _unitedstates_unitedstates_component__WEBPACK_IMPORTED_MODULE_9__["UnitedstatesComponent"],
+            _home_home_component__WEBPACK_IMPORTED_MODULE_10__["HomeComponent"],
+            _symptoms_symptoms_component__WEBPACK_IMPORTED_MODULE_11__["SymptomsComponent"]
+        ],
+        imports: [
+            _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
+            _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"],
+            _angular_common_http__WEBPACK_IMPORTED_MODULE_6__["HttpClientModule"],
+        ],
+        providers: [],
+        bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
+    })
+], AppModule);
+
+
+
+/***/ }),
+
+/***/ "./src/app/covid-service.service.ts":
+/*!******************************************!*\
+  !*** ./src/app/covid-service.service.ts ***!
+  \******************************************/
+/*! exports provided: CovidServiceService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CovidServiceService", function() { return CovidServiceService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+
+
+
+let CovidServiceService = class CovidServiceService {
+    constructor(http) {
+        this.http = http;
+        this.summaryApi = "https://api.covid19api.com/summary";
+        this.newsApi = "https://covidtracking.com/api/press";
+        this.usStatesCovidApi = "https://covidtracking.com/api/states";
+        this.usTotalApi = "https://api.covid19api.com/total/country/us";
+    }
+    getSummary() {
+        return this.http.get(this.summaryApi);
+    }
+    getNews() {
+        return this.http.get(this.newsApi);
+    }
+    getUsStatesCovid() {
+        return this.http.get(this.usStatesCovidApi);
+    }
+    getUSTotal() {
+        return this.http.get(this.usTotalApi);
+    }
+};
+CovidServiceService.ctorParameters = () => [
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
+];
+CovidServiceService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    })
+], CovidServiceService);
+
+
+
+/***/ }),
+
+/***/ "./src/app/global/global.component.css":
+/*!*********************************************!*\
+  !*** ./src/app/global/global.component.css ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (".card-deck{\r\n    display: flex;\r\n    justify-content: center;\r\n    flex-wrap: wrap;\r\n    width: 100%;\r\n    /* position: absolute; */\r\n    margin: 0 auto;\r\n    top: 100px;\r\n    margin-top: -3%;\r\n   \r\n}\r\n.titleClass{\r\n    float: left;\r\n}\r\n.globeImg {\r\n    height: 40px;\r\n    width: 40px;\r\n    float: right;\r\n    padding: 5px;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZ2xvYmFsL2dsb2JhbC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksYUFBYTtJQUNiLHVCQUF1QjtJQUN2QixlQUFlO0lBQ2YsV0FBVztJQUNYLHdCQUF3QjtJQUN4QixjQUFjO0lBQ2QsVUFBVTtJQUNWLGVBQWU7O0FBRW5CO0FBQ0E7SUFDSSxXQUFXO0FBQ2Y7QUFDQTtJQUNJLFlBQVk7SUFDWixXQUFXO0lBQ1gsWUFBWTtJQUNaLFlBQVk7QUFDaEIiLCJmaWxlIjoic3JjL2FwcC9nbG9iYWwvZ2xvYmFsLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuY2FyZC1kZWNre1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG4gICAgZmxleC13cmFwOiB3cmFwO1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICAvKiBwb3NpdGlvbjogYWJzb2x1dGU7ICovXHJcbiAgICBtYXJnaW46IDAgYXV0bztcclxuICAgIHRvcDogMTAwcHg7XHJcbiAgICBtYXJnaW4tdG9wOiAtMyU7XHJcbiAgIFxyXG59XHJcbi50aXRsZUNsYXNze1xyXG4gICAgZmxvYXQ6IGxlZnQ7XHJcbn1cclxuLmdsb2JlSW1nIHtcclxuICAgIGhlaWdodDogNDBweDtcclxuICAgIHdpZHRoOiA0MHB4O1xyXG4gICAgZmxvYXQ6IHJpZ2h0O1xyXG4gICAgcGFkZGluZzogNXB4O1xyXG59Il19 */");
+
+/***/ }),
+
+/***/ "./src/app/global/global.component.ts":
+/*!********************************************!*\
+  !*** ./src/app/global/global.component.ts ***!
+  \********************************************/
+/*! exports provided: GlobalComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GlobalComponent", function() { return GlobalComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _covid_service_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../covid-service.service */ "./src/app/covid-service.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+
+
+
+
+let GlobalComponent = class GlobalComponent {
+    constructor(covidService, router) {
+        this.covidService = covidService;
+        this.router = router;
+    }
+    ngOnInit() {
+        this.getSummaryData();
+        this.getUSData();
+    }
+    getSummaryData() {
+        this.covidService.getSummary().subscribe((data) => {
+            this.summary = data;
+            this.totalConfirmed = data['Global']['TotalConfirmed'].toLocaleString('en-US');
+            this.totalDeaths = data['Global']['TotalDeaths'].toLocaleString('en-US');
+            this.totalRecovered = data['Global']['TotalRecovered'].toLocaleString('en-US');
+        });
+    }
+    getUSData() {
+        this.covidService.getUSTotal().subscribe((data) => {
+            this.totalConfirmedUS = data[data.length - 1]['Confirmed'];
+            this.totalDeathsUS = data[data.length - 1]['Deaths'];
+            this.totalRecoveredUS = data[data.length - 1]['Recovered'];
+        });
+    }
+};
+GlobalComponent.ctorParameters = () => [
+    { type: _covid_service_service__WEBPACK_IMPORTED_MODULE_2__["CovidServiceService"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"] }
+];
+GlobalComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-global',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./global.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/global/global.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./global.component.css */ "./src/app/global/global.component.css")).default]
+    })
+], GlobalComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/home/home.component.css":
+/*!*****************************************!*\
+  !*** ./src/app/home/home.component.css ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\r\nheader{\r\n    background-color: rgba(1, 1, 8, 0.904);\r\n    height: 200px;\r\n    text-align: center;\r\n   \r\n}\r\n\r\n\r\n.headerText h1 {\r\n    color: white;\r\n    font-size: 700%;\r\n    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */\r\n    display: inline-block;\r\n    \r\n\r\n}\r\n\r\n\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaG9tZS9ob21lLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUNBO0lBQ0ksc0NBQXNDO0lBQ3RDLGFBQWE7SUFDYixrQkFBa0I7O0FBRXRCOzs7QUFHQTtJQUNJLFlBQVk7SUFDWixlQUFlO0lBQ2Ysc0RBQXNEO0lBQ3RELHFCQUFxQjs7O0FBR3pCIiwiZmlsZSI6InNyYy9hcHAvaG9tZS9ob21lLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJcclxuaGVhZGVye1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgxLCAxLCA4LCAwLjkwNCk7XHJcbiAgICBoZWlnaHQ6IDIwMHB4O1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICBcclxufVxyXG5cclxuXHJcbi5oZWFkZXJUZXh0IGgxIHtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICAgIGZvbnQtc2l6ZTogNzAwJTtcclxuICAgIC8qIGZvbnQtZmFtaWx5OiBWZXJkYW5hLCBHZW5ldmEsIFRhaG9tYSwgc2Fucy1zZXJpZjsgKi9cclxuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcclxuICAgIFxyXG5cclxufVxyXG5cclxuXHJcbiJdfQ== */");
+
+/***/ }),
+
+/***/ "./src/app/home/home.component.ts":
+/*!****************************************!*\
+  !*** ./src/app/home/home.component.ts ***!
+  \****************************************/
+/*! exports provided: HomeComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeComponent", function() { return HomeComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let HomeComponent = class HomeComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+HomeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-home',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./home.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/home/home.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./home.component.css */ "./src/app/home/home.component.css")).default]
+    })
+], HomeComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/news/news.component.css":
+/*!*****************************************!*\
+  !*** ./src/app/news/news.component.css ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (".newsCard{\r\n    width: 75%;\r\n    margin: 3% auto;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbmV3cy9uZXdzLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxVQUFVO0lBQ1YsZUFBZTtBQUNuQiIsImZpbGUiOiJzcmMvYXBwL25ld3MvbmV3cy5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLm5ld3NDYXJke1xyXG4gICAgd2lkdGg6IDc1JTtcclxuICAgIG1hcmdpbjogMyUgYXV0bztcclxufSJdfQ== */");
+
+/***/ }),
+
+/***/ "./src/app/news/news.component.ts":
+/*!****************************************!*\
+  !*** ./src/app/news/news.component.ts ***!
+  \****************************************/
+/*! exports provided: NewsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NewsComponent", function() { return NewsComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _covid_service_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../covid-service.service */ "./src/app/covid-service.service.ts");
+
+
+
+let NewsComponent = class NewsComponent {
+    constructor(covidService) {
+        this.covidService = covidService;
+    }
+    ngOnInit() {
+        this.getNewsData();
+    }
+    getNewsData() {
+        this.covidService.getNews().subscribe((data) => {
+            this.newsArray = data.slice(0, 5);
+        });
+    }
+};
+NewsComponent.ctorParameters = () => [
+    { type: _covid_service_service__WEBPACK_IMPORTED_MODULE_2__["CovidServiceService"] }
+];
+NewsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-news',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./news.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/news/news.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./news.component.css */ "./src/app/news/news.component.css")).default]
+    })
+], NewsComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/summary/summary.component.css":
+/*!***********************************************!*\
+  !*** ./src/app/summary/summary.component.css ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (".summaryTable{\r\n    width: 75%;\r\n    margin: 3% auto;\r\n    text-align: center;\r\n   \r\n\r\n}\r\n\r\n.table th{\r\n    border-bottom: 2px solid rgba(24, 6, 65, 0.89);\r\n    border-top: 2px solid rgba(24, 6, 65, 0.89);\r\n}\r\n\r\n.summaryTable h3{\r\n    display: inline-block;\r\n    font-style: initial;\r\n    font-weight: bolder;\r\n   \r\n    \r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc3VtbWFyeS9zdW1tYXJ5LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxVQUFVO0lBQ1YsZUFBZTtJQUNmLGtCQUFrQjs7O0FBR3RCOztBQUVBO0lBQ0ksOENBQThDO0lBQzlDLDJDQUEyQztBQUMvQzs7QUFHQTtJQUNJLHFCQUFxQjtJQUNyQixtQkFBbUI7SUFDbkIsbUJBQW1COzs7QUFHdkIiLCJmaWxlIjoic3JjL2FwcC9zdW1tYXJ5L3N1bW1hcnkuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5zdW1tYXJ5VGFibGV7XHJcbiAgICB3aWR0aDogNzUlO1xyXG4gICAgbWFyZ2luOiAzJSBhdXRvO1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICBcclxuXHJcbn1cclxuXHJcbi50YWJsZSB0aHtcclxuICAgIGJvcmRlci1ib3R0b206IDJweCBzb2xpZCByZ2JhKDI0LCA2LCA2NSwgMC44OSk7XHJcbiAgICBib3JkZXItdG9wOiAycHggc29saWQgcmdiYSgyNCwgNiwgNjUsIDAuODkpO1xyXG59XHJcblxyXG5cclxuLnN1bW1hcnlUYWJsZSBoM3tcclxuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcclxuICAgIGZvbnQtc3R5bGU6IGluaXRpYWw7XHJcbiAgICBmb250LXdlaWdodDogYm9sZGVyO1xyXG4gICBcclxuICAgIFxyXG59Il19 */");
+
+/***/ }),
+
+/***/ "./src/app/summary/summary.component.ts":
+/*!**********************************************!*\
+  !*** ./src/app/summary/summary.component.ts ***!
+  \**********************************************/
+/*! exports provided: SummaryComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SummaryComponent", function() { return SummaryComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _covid_service_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../covid-service.service */ "./src/app/covid-service.service.ts");
+
+
+
+let SummaryComponent = class SummaryComponent {
+    constructor(covidService) {
+        this.covidService = covidService;
+        this.countrySummary = [];
+        this.headElements = ['id', 'Country', 'TotalConfirmed', 'NewConfirmed', 'TotalDeaths', 'NewDeaths', 'TotalRecovered', 'NewRecovered'];
+    }
+    ngOnInit() {
+        this.getCountrySummaryData();
+    }
+    getCountrySummaryData() {
+        this.covidService.getSummary().subscribe((data) => {
+            this.countrySummary = data['Countries'];
+            this.countrySummary.sort((a, b) => parseFloat(b.TotalConfirmed) - parseFloat(a.TotalConfirmed));
+        });
+    }
+};
+SummaryComponent.ctorParameters = () => [
+    { type: _covid_service_service__WEBPACK_IMPORTED_MODULE_2__["CovidServiceService"] }
+];
+SummaryComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-summary',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./summary.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/summary/summary.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./summary.component.css */ "./src/app/summary/summary.component.css")).default]
+    })
+], SummaryComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/symptoms/symptoms.component.css":
+/*!*************************************************!*\
+  !*** ./src/app/symptoms/symptoms.component.css ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (".symptom {\r\n    width: 85%;\r\n    margin: 3% auto;\r\n}\r\n\r\n.symptom img {\r\n   display: block;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n  width: 20%;\r\n}\r\n\r\n.card-title {\r\n    text-align: center;\r\n    margin-top: 4%;\r\n}\r\n\r\n.MoreInfo {\r\n    float: right;\r\n    margin-top: 2%;\r\n    \r\n}\r\n\r\n.coughGif {\r\n    float: left;\r\n\r\n}\r\n\r\n.feverGif {\r\n    float: left;\r\n}\r\n\r\nimgClass {\r\n    width: 100%;\r\n    height: 200px;\r\n}\r\n\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc3ltcHRvbXMvc3ltcHRvbXMuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLFVBQVU7SUFDVixlQUFlO0FBQ25COztBQUVBO0dBQ0csY0FBYztFQUNmLGlCQUFpQjtFQUNqQixrQkFBa0I7RUFDbEIsVUFBVTtBQUNaOztBQUVBO0lBQ0ksa0JBQWtCO0lBQ2xCLGNBQWM7QUFDbEI7O0FBR0E7SUFDSSxZQUFZO0lBQ1osY0FBYzs7QUFFbEI7O0FBRUE7SUFDSSxXQUFXOztBQUVmOztBQUNBO0lBQ0ksV0FBVztBQUNmOztBQUVBO0lBQ0ksV0FBVztJQUNYLGFBQWE7QUFDakIiLCJmaWxlIjoic3JjL2FwcC9zeW1wdG9tcy9zeW1wdG9tcy5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnN5bXB0b20ge1xyXG4gICAgd2lkdGg6IDg1JTtcclxuICAgIG1hcmdpbjogMyUgYXV0bztcclxufVxyXG5cclxuLnN5bXB0b20gaW1nIHtcclxuICAgZGlzcGxheTogYmxvY2s7XHJcbiAgbWFyZ2luLWxlZnQ6IGF1dG87XHJcbiAgbWFyZ2luLXJpZ2h0OiBhdXRvO1xyXG4gIHdpZHRoOiAyMCU7XHJcbn1cclxuXHJcbi5jYXJkLXRpdGxlIHtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgIG1hcmdpbi10b3A6IDQlO1xyXG59XHJcblxyXG5cclxuLk1vcmVJbmZvIHtcclxuICAgIGZsb2F0OiByaWdodDtcclxuICAgIG1hcmdpbi10b3A6IDIlO1xyXG4gICAgXHJcbn1cclxuXHJcbi5jb3VnaEdpZiB7XHJcbiAgICBmbG9hdDogbGVmdDtcclxuXHJcbn1cclxuLmZldmVyR2lmIHtcclxuICAgIGZsb2F0OiBsZWZ0O1xyXG59XHJcblxyXG5pbWdDbGFzcyB7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGhlaWdodDogMjAwcHg7XHJcbn1cclxuXHJcbiJdfQ== */");
+
+/***/ }),
+
+/***/ "./src/app/symptoms/symptoms.component.ts":
+/*!************************************************!*\
+  !*** ./src/app/symptoms/symptoms.component.ts ***!
+  \************************************************/
+/*! exports provided: SymptomsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SymptomsComponent", function() { return SymptomsComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let SymptomsComponent = class SymptomsComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+SymptomsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-symptoms',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./symptoms.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/symptoms/symptoms.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./symptoms.component.css */ "./src/app/symptoms/symptoms.component.css")).default]
+    })
+], SymptomsComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/unitedstates/unitedstates.component.css":
+/*!*********************************************************!*\
+  !*** ./src/app/unitedstates/unitedstates.component.css ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("header{\r\n    background-color: rgba(1, 1, 8, 0.904);\r\n    height: 200px;\r\n    text-align: center;\r\n   \r\n}\r\n\r\n\r\n.headerText h1 {\r\n    color: white;\r\n    font-size: 700%;\r\n    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */\r\n    display: inline-block;\r\n    \r\n\r\n}\r\n\r\n\r\n.summaryTable{\r\n    width: 75%;\r\n    margin: 3% auto;\r\n    text-align: center;\r\n   \r\n\r\n}\r\n\r\n\r\n.table th{\r\n    border-bottom: 2px solid rgba(24, 6, 65, 0.89);\r\n    border-top: 2px solid rgba(24, 6, 65, 0.89);\r\n}\r\n\r\n\r\n.summaryTable h3{\r\n    display: inline-block;\r\n    font-style: initial;\r\n    font-weight: bolder;\r\n    \r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdW5pdGVkc3RhdGVzL3VuaXRlZHN0YXRlcy5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksc0NBQXNDO0lBQ3RDLGFBQWE7SUFDYixrQkFBa0I7O0FBRXRCOzs7QUFHQTtJQUNJLFlBQVk7SUFDWixlQUFlO0lBQ2Ysc0RBQXNEO0lBQ3RELHFCQUFxQjs7O0FBR3pCOzs7QUFFQTtJQUNJLFVBQVU7SUFDVixlQUFlO0lBQ2Ysa0JBQWtCOzs7QUFHdEI7OztBQUVBO0lBQ0ksOENBQThDO0lBQzlDLDJDQUEyQztBQUMvQzs7O0FBR0E7SUFDSSxxQkFBcUI7SUFDckIsbUJBQW1CO0lBQ25CLG1CQUFtQjs7QUFFdkIiLCJmaWxlIjoic3JjL2FwcC91bml0ZWRzdGF0ZXMvdW5pdGVkc3RhdGVzLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJoZWFkZXJ7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDEsIDEsIDgsIDAuOTA0KTtcclxuICAgIGhlaWdodDogMjAwcHg7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgIFxyXG59XHJcblxyXG5cclxuLmhlYWRlclRleHQgaDEge1xyXG4gICAgY29sb3I6IHdoaXRlO1xyXG4gICAgZm9udC1zaXplOiA3MDAlO1xyXG4gICAgLyogZm9udC1mYW1pbHk6IFZlcmRhbmEsIEdlbmV2YSwgVGFob21hLCBzYW5zLXNlcmlmOyAqL1xyXG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xyXG4gICAgXHJcblxyXG59XHJcblxyXG4uc3VtbWFyeVRhYmxle1xyXG4gICAgd2lkdGg6IDc1JTtcclxuICAgIG1hcmdpbjogMyUgYXV0bztcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgXHJcblxyXG59XHJcblxyXG4udGFibGUgdGh7XHJcbiAgICBib3JkZXItYm90dG9tOiAycHggc29saWQgcmdiYSgyNCwgNiwgNjUsIDAuODkpO1xyXG4gICAgYm9yZGVyLXRvcDogMnB4IHNvbGlkIHJnYmEoMjQsIDYsIDY1LCAwLjg5KTtcclxufVxyXG5cclxuXHJcbi5zdW1tYXJ5VGFibGUgaDN7XHJcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XHJcbiAgICBmb250LXN0eWxlOiBpbml0aWFsO1xyXG4gICAgZm9udC13ZWlnaHQ6IGJvbGRlcjtcclxuICAgIFxyXG59Il19 */");
+
+/***/ }),
+
+/***/ "./src/app/unitedstates/unitedstates.component.ts":
+/*!********************************************************!*\
+  !*** ./src/app/unitedstates/unitedstates.component.ts ***!
+  \********************************************************/
+/*! exports provided: UnitedstatesComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UnitedstatesComponent", function() { return UnitedstatesComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _covid_service_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../covid-service.service */ "./src/app/covid-service.service.ts");
+
+
+
+
+let UnitedstatesComponent = class UnitedstatesComponent {
+    constructor(router, covidService) {
+        this.router = router;
+        this.covidService = covidService;
+        this.usStateHashMap = {
+            "AL": "Alabama",
+            "AK": "Alaska",
+            "AS": "American Samoa",
+            "AZ": "Arizona",
+            "AR": "Arkansas",
+            "CA": "California",
+            "CO": "Colorado",
+            "CT": "Connecticut",
+            "DE": "Delaware",
+            "DC": "District Of Columbia",
+            "FM": "Federated States Of Micronesia",
+            "FL": "Florida",
+            "GA": "Georgia",
+            "GU": "Guam",
+            "HI": "Hawaii",
+            "ID": "Idaho",
+            "IL": "Illinois",
+            "IN": "Indiana",
+            "IA": "Iowa",
+            "KS": "Kansas",
+            "KY": "Kentucky",
+            "LA": "Louisiana",
+            "ME": "Maine",
+            "MH": "Marshall Islands",
+            "MD": "Maryland",
+            "MA": "Massachusetts",
+            "MI": "Michigan",
+            "MN": "Minnesota",
+            "MS": "Mississippi",
+            "MO": "Missouri",
+            "MT": "Montana",
+            "NE": "Nebraska",
+            "NV": "Nevada",
+            "NH": "New Hampshire",
+            "NJ": "New Jersey",
+            "NM": "New Mexico",
+            "NY": "New York",
+            "NC": "North Carolina",
+            "ND": "North Dakota",
+            "MP": "Northern Mariana Islands",
+            "OH": "Ohio",
+            "OK": "Oklahoma",
+            "OR": "Oregon",
+            "PW": "Palau",
+            "PA": "Pennsylvania",
+            "PR": "Puerto Rico",
+            "RI": "Rhode Island",
+            "SC": "South Carolina",
+            "SD": "South Dakota",
+            "TN": "Tennessee",
+            "TX": "Texas",
+            "UT": "Utah",
+            "VT": "Vermont",
+            "VI": "Virgin Islands",
+            "VA": "Virginia",
+            "WA": "Washington",
+            "WV": "West Virginia",
+            "WI": "Wisconsin",
+            "WY": "Wyoming"
+        };
+    }
+    ngOnInit() {
+        this.getUsStatesCovidData();
+    }
+    getUsStatesCovidData() {
+        this.covidService.getUsStatesCovid().subscribe((data) => {
+            this.usStateCovidArray = data;
+            this.usStateCovidArray.sort((a, b) => parseFloat(b.positive) - parseFloat(a.positive));
+            for (var i = 0; i < this.usStateCovidArray.length; i++) {
+                var stateVar = this.usStateCovidArray[i]['state'];
+                this.usStateCovidArray[i]['stateName'] = this.usStateHashMap[stateVar];
+            }
+            console.log(this.usStateCovidArray);
+        });
+    }
+};
+UnitedstatesComponent.ctorParameters = () => [
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] },
+    { type: _covid_service_service__WEBPACK_IMPORTED_MODULE_3__["CovidServiceService"] }
+];
+UnitedstatesComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-unitedstates',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./unitedstates.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/unitedstates/unitedstates.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./unitedstates.component.css */ "./src/app/unitedstates/unitedstates.component.css")).default]
+    })
+], UnitedstatesComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/environments/environment.ts":
+/*!*****************************************!*\
+  !*** ./src/environments/environment.ts ***!
+  \*****************************************/
+/*! exports provided: environment */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "environment", function() { return environment; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+// This file can be replaced during build by using the `fileReplacements` array.
+// `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
+// The list of file replacements can be found in `angular.json`.
+
+const environment = {
+    production: false
+};
+/*
+ * For easier debugging in development mode, you can import the following file
+ * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
+ *
+ * This import should be commented out in production mode because it will have a negative impact
+ * on performance if an error is thrown.
+ */
+// import 'zone.js/dist/zone-error';  // Included with Angular CLI.
+
+
+/***/ }),
+
+/***/ "./src/main.ts":
+/*!*********************!*\
+  !*** ./src/main.ts ***!
+  \*********************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/platform-browser-dynamic */ "./node_modules/@angular/platform-browser-dynamic/fesm2015/platform-browser-dynamic.js");
+/* harmony import */ var _app_app_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app/app.module */ "./src/app/app.module.ts");
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./environments/environment */ "./src/environments/environment.ts");
+
+
+
+
+
+if (_environments_environment__WEBPACK_IMPORTED_MODULE_4__["environment"].production) {
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["enableProdMode"])();
+}
+Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformBrowserDynamic"])().bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_3__["AppModule"])
+    .catch(err => console.error(err));
+
+
+/***/ }),
+
+/***/ 0:
+/*!**********************************************************************************************************!*\
+  !*** multi (webpack)-dev-server/client?http://0.0.0.0:0/sockjs-node&sockPath=/sockjs-node ./src/main.ts ***!
+  \**********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! C:\Users\Anooj Kinagi\Documents\Covid-Tracker\node_modules\webpack-dev-server\client\index.js?http://0.0.0.0:0/sockjs-node&sockPath=/sockjs-node */"./node_modules/webpack-dev-server/client/index.js?http://0.0.0.0:0/sockjs-node&sockPath=/sockjs-node");
+module.exports = __webpack_require__(/*! C:\Users\Anooj Kinagi\Documents\Covid-Tracker\src\main.ts */"./src/main.ts");
+
+
+/***/ })
+
+},[[0,"runtime","vendor"]]]);
+//# sourceMappingURL=main.js.map
