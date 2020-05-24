@@ -10,6 +10,7 @@ import { SummaryComponent } from './summary/summary.component';
 import { NewsComponent } from './news/news.component';
 import { UnitedstatesComponent } from './unitedstates/unitedstates.component';
 import { HomeComponent } from './home/home.component';
+import { SymptomsComponent } from './symptoms/symptoms.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HomeComponent } from './home/home.component';
     SummaryComponent,
     NewsComponent,
     UnitedstatesComponent,
-    HomeComponent
+    HomeComponent,
+    SymptomsComponent
   ],
   imports: [
     BrowserModule,

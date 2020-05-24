@@ -15,6 +15,7 @@
 .summaryTable h3{
     display: inline-block;
     font-style: initial;
-    font-weight: bolder;
+    /* font-weight: bolder; */
+   
     
 }

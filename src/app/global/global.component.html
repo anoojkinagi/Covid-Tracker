@@ -1,27 +1,43 @@
 
+
+
+
 <div class="card-deck">
 
 <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
-    <div class="card-header"><h3 class="titleClass">Total Confirmed</h3><img *ngIf="router.url === '/'" src="./assets/globe.png" class="globeImg"> <img *ngIf="router.url === '/united-states'" src="./assets/usflag.png" class="globeImg"></div>
+    <div class="card-header"><h3 class="titleClass">Total Confirmed</h3><img *ngIf="router.url === '/united-states' ; else elseImg" src="./assets/usflag.png" class="globeImg"> <ng-template #elseImg> <img src="./assets/globe.png" class="globeImg"> </ng-template> </div>
     <div class="card-body">
-      <h4 *ngIf="router.url === '/'" class="card-title">{{totalConfirmed}} </h4>
-      <h4 *ngIf="router.url === '/united-states'" class="card-title">{{totalConfirmedUS | number}} </h4>
+      
+      <h4 *ngIf="router.url === '/united-states' ; else elseTemplate" class="card-title">{{totalConfirmedUS | number}} </h4>
+      <ng-template #elseTemplate>
+        <h4  class="card-title">{{totalConfirmed}} </h4>
+      
+      </ng-template>
+      
       <p class="card-text">Number of coronavirus cases since the outbreak.</p>
     </div>
   </div>
 <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-    <div class="card-header"><h3 class="titleClass">Total Deaths</h3><img *ngIf="router.url === '/'" src="./assets/globe.png" class="globeImg"> <img *ngIf="router.url === '/united-states'" src="./assets/usflag.png" class="globeImg"></div>
+    <div class="card-header"><h3 class="titleClass">Total Deaths</h3><img *ngIf="router.url === '/united-states' ; else elseImg" src="./assets/usflag.png" class="globeImg"> </div>
     <div class="card-body">
-      <h4 *ngIf="router.url === '/'" class="card-title">{{totalDeaths}} </h4>
-      <h4 *ngIf="router.url === '/united-states'" class="card-title">{{totalDeathsUS | number}} </h4>
+      
+      <h4 *ngIf="router.url === '/united-states' ; else elseTemplate2" class="card-title">{{totalDeathsUS | number}} </h4>
+      <ng-template #elseTemplate2>
+        <h4  class="card-title">{{totalDeaths}} </h4>
+      
+      </ng-template>
       <p class="card-text">Number of coronavirus related deaths since the outbreak.</p>
     </div>
   </div>
 <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
-  <div class="card-header"><h3 class="titleClass">Total Recovered</h3><img *ngIf="router.url === '/'" src="./assets/globe.png" class="globeImg"> <img *ngIf="router.url === '/united-states'" src="./assets/usflag.png" class="globeImg"></div>
+  <div class="card-header"><h3 class="titleClass">Total Recovered</h3><img *ngIf="router.url === '/united-states' ; else elseImg" src="./assets/usflag.png" class="globeImg"> </div>
   <div class="card-body">
-    <h4 *ngIf="router.url === '/'" class="card-title">{{totalRecovered}} </h4>
-    <h4 *ngIf="router.url === '/united-states'" class="card-title">{{totalRecoveredUS | number}} </h4>
+   
+    <h4 *ngIf="router.url === '/united-states' ; else elseTemplate3" class="card-title">{{totalRecoveredUS | number}} </h4>
+    <ng-template #elseTemplate3>
+      <h4  class="card-title">{{totalRecovered}} </h4>
+    
+    </ng-template>
     <p class="card-text">Number of cases recovered since the outbreak.</p>
   </div>
 </div>

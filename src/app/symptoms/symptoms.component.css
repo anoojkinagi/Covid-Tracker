@@ -1,0 +1,40 @@
+.symptom {
+    width: 85%;
+    margin: 3% auto;
+}
+
+.symptom img {
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+.card-title {
+    text-align: center;
+    margin-top: 4%;
+}
+
+
+.MoreInfo {
+    float: right;
+    margin-top: 2%;
+    
+}
+
+.coughGif {
+    
+    float: left;
+    
+
+}
+.feverGif {
+    float: right;
+}
+
+
+imgClass {
+    width: 100%;
+    height: 200px;
+}
+
