@@ -8,23 +8,23 @@
         <th scope="col">#</th>
         <th scope="col">Country</th>
         <th scope="col">Total Confirmed</th>
-        <th scope="col">New Confirmed</th>
-        <th scope="col">Total Deaths</th>
-        <th scope="col">New Deaths</th>
-        <th scope="col">Total Recovered</th>
-        <th scope="col">New Recovered</th>
+        <th scope="col" class="new">New Confirmed</th>
+        <th scope="col" >Total Deaths</th>
+        <th scope="col" class="new">New Deaths</th>
+        <th scope="col" class="new">Total Recovered</th>
+        <th scope="col" class="new">New Recovered</th>
       </tr>
     </thead>
     <tbody>
       <tr *ngFor="let country of countrySummary; index as i">
         <td scope="row">{{i+1}}</td>
         <td>{{country.Country}}</td>
-        <td>{{country.TotalConfirmed  | number}}</td>
-        <td>{{country.NewConfirmed | number}}</td>
-        <td>{{country.TotalDeaths | number}}</td>
-        <td>{{country.NewDeaths | number}}</td>
-        <td>{{country.TotalRecovered | number}}</td>
-        <td>{{country.NewRecovered | number}}</td>
+        <td class="total">{{country.TotalConfirmed  | number}}</td>
+        <td class="new">{{country.NewConfirmed | number}}</td>
+        <td class="total">{{country.TotalDeaths | number}}</td>
+        <td class="new">{{country.NewDeaths | number}}</td>
+        <td class="new">{{country.TotalRecovered | number}}</td>
+        <td class="new">{{country.NewRecovered | number}}</td>
       </tr>
       
     </tbody>

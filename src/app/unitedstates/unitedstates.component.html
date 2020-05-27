@@ -22,7 +22,7 @@
         <th scope="col">State</th>
         <th scope="col">Total Confirmed</th>
         <th scope="col">Total Deaths</th>
-        <th scope="col">Total Recovered</th>
+        <th scope="col" class="new">Total Recovered</th>
 
       </tr>
     </thead>
@@ -32,7 +32,7 @@
         <td>{{state.stateName}} ( {{state.state}} )</td>
         <td>{{state.positive  | number}}</td>
         <td>{{state.death | number}}</td>
-        <td>{{state.recovered | number}}</td>
+        <td class="new">{{state.recovered | number}}</td>
 
       </tr>
 

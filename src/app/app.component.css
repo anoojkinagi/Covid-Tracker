@@ -3,4 +3,12 @@
     background-color: black;
 }
 
+nav{
+    background-color: rgba(1, 1, 8, 0.904);
+    
+}
 
+.navbar-nav li{
+        border-bottom: 1px solid white;
+        margin: 10px;
+}

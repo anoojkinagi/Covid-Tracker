@@ -17,3 +17,14 @@ header{
 }
 
 
+@media only screen and (max-width: 768px) {
+
+    .headerText h1 {
+        color: white;
+        font-size: 400%;
+        /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+        display: inline-block;
+        
+    
+    }
+}
