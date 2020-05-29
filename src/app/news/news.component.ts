@@ -19,7 +19,10 @@ export class NewsComponent implements OnInit {
 
   getNewsData() {
     this.covidService.getNews().subscribe((data)=>{
-      this.newsArray =data.slice(0,5);
+      console.log(data);
+      this.newsArray =data['articles'];
+      this.newsArray = this.newsArray.slice(0,5);
+
     })
   }
 
