@@ -12,6 +12,7 @@ import { UnitedstatesComponent } from './unitedstates/unitedstates.component';
 import { HomeComponent } from './home/home.component';
 import { SymptomsComponent } from './symptoms/symptoms.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,6 +27,7 @@ import { SymptomsComponent } from './symptoms/symptoms.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+
 
   ],
   providers: [],

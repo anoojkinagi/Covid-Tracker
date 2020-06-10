@@ -24,7 +24,7 @@ export class CovidServiceService {
 
   getNews() {
 
-    return this.http.get<any>(this.proxyUrl+this.newsApi);
+    return this.http.get<any>(this.newsApi);
 
   }
 
