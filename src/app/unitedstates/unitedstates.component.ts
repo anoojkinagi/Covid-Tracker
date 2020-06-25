@@ -87,7 +87,7 @@ export class UnitedstatesComponent implements OnInit {
              var stateVar = this.usStateCovidArray[i]['state'];
              this.usStateCovidArray[i]['stateName'] = this.usStateHashMap[stateVar];
           }
-          console.log(this.usStateCovidArray);
+          
 
       })
 
