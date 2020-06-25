@@ -20,11 +20,11 @@
         <td scope="row">{{i+1}}</td>
         <td>{{country.Country}}</td>
         <td class="total">{{country.TotalConfirmed  | number}}</td>
-        <td class="new">{{country.NewConfirmed | number}}</td>
+        <td class="new newCase">+{{country.NewConfirmed | number}}</td>
         <td class="total">{{country.TotalDeaths | number}}</td>
-        <td class="new">{{country.NewDeaths | number}}</td>
+        <td class="new death">+{{country.NewDeaths | number}}</td>
         <td class="new">{{country.TotalRecovered | number}}</td>
-        <td class="new">{{country.NewRecovered | number}}</td>
+        <td class="new positive">+{{country.NewRecovered | number}}</td>
       </tr>
       
     </tbody>

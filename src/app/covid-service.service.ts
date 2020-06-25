@@ -24,11 +24,11 @@ export class CovidServiceService {
 
   }
 
-  getNews() {
+  // getNews() {
 
-    return this.http.get<any>(this.newsApi);
+  //   return this.http.get<any>(this.newsApi);
 
-  }
+  // }
 
   getUsStatesCovid() {
 
