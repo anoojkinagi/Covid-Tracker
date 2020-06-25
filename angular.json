@@ -63,13 +63,13 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Covid-Tracker:build",
-            "proxyConfig" : "proxyconfig.json"
+            "browserTarget": "Covid-Tracker:build"
+            
           },
           "configurations": {
             "production": {
-              "browserTarget": "Covid-Tracker:build:production",
-              "proxyConfig" : "proxyconfig.json"
+              "browserTarget": "Covid-Tracker:build:production"
+              
 
             }
           }
