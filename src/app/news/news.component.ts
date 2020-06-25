@@ -13,18 +13,18 @@ export class NewsComponent implements OnInit {
 
   newsArray:any;
   ngOnInit() {
-    this.getNewsData();
+    // this.getNewsData();
   }
 
 
-  getNewsData() {
-    this.covidService.getNews().subscribe((data)=>{
-     console.log("NEWS ",data);
-      this.newsArray =data['articles'];
-      this.newsArray = this.newsArray.slice(0,5);
-      console.log(this.newsArray);
+  // getNewsData() {
+  //   this.covidService.getNews().subscribe((data)=>{
+  //    
+  //     this.newsArray =data['articles'];
+  //     this.newsArray = this.newsArray.slice(0,5);
+  //     console.log(this.newsArray);
 
-    })
-  }
+  //   })
+  // }
 
 }
