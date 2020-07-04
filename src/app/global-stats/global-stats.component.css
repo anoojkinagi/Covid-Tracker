@@ -19,3 +19,17 @@
 .chart{
     margin: 0 auto;
 }
+
+
+@media only screen and (max-width: 768px) {
+    .stat-div {
+        width: 100%;
+        
+    }
+    .chart{
+        
+        width: 100%;
+    }
+   
+
+}
