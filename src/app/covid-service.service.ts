@@ -17,6 +17,9 @@ export class CovidServiceService {
    usStatesCovidApi = "https://covidtracking.com/api/states";
    usTotalApi= "https://api.covid19api.com/total/country/us";
    proxyUrl = "https://cors-anywhere.herokuapp.com/";
+   countriesUrl = "https://api-corona.azurewebsites.net/country";
+   countryTimelineUrl = "https://api-corona.azurewebsites.net/timeline/";
+   USTimelineUrl = "https://disease.sh/v3/covid-19/nyt/states/";
 
   getSummary() {
 
@@ -29,6 +32,26 @@ export class CovidServiceService {
   //   return this.http.get<any>(this.newsApi);
 
   // }
+
+  getCountries() {
+
+    return this.http.get<any>(this.countriesUrl);
+
+  }
+
+
+  getCountryTimeline(country) {
+
+    return this.http.get<any>(this.countryTimelineUrl+country);
+
+  }
+
+  getUSTimeline(state) {
+
+    return this.http.get<any>(this.USTimelineUrl+state);
+
+  }
+
 
   getUsStatesCovid() {
 

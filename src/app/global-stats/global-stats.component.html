@@ -1,0 +1,27 @@
+
+
+
+
+<div class="stat-div">
+
+    <select class="dropdown" (change)="getGlobalStats($event.target.value)">
+        <option value="0">--Select Country--</option>
+        <option *ngFor="let country of countrySlug" value={{country}}>
+          {{country}}
+        </option>
+      </select>
+
+    <div class="chart" style="width: 70%;">
+        <canvas
+            baseChart
+            [chartType]="'line'"
+            [datasets]="chartData"
+            [labels]="chartLabels"
+            [options]="chartOptions"
+            [legend]="true"
+           >
+        </canvas>
+      </div>
+
+
+</div>
