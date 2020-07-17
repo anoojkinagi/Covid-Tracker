@@ -1,7 +1,7 @@
 <div class="stat-div">
 
     <select class="dropdown" (change)="getUSStats($event.target.value)">
-        <option value="0">--Select State--</option>
+        <option value="">--Select State--</option>
         <option *ngFor="let state of stateSlug" value={{state}}>
           {{state}}
         </option>
